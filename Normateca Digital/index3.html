@@ -870,57 +870,12 @@
   <section id="privacidad" style="background-color: #f5f7fa;">
     <div class="container">
       <div class="section-title">
-        <h2>Aviso de Privacidad</h2>
-        <p>Consulta nuestro aviso de privacidad y solicita información</p>
+        <h2>Contáctanos</h2>
+        <p>Envíanos tus datos para más información</p>
       </div>
-      <div class="privacy-notice" role="region" aria-labelledby="aviso-titulo">
-        <h3 id="aviso-titulo">Normateca Digital</h3>
-        <article>
-          <p><strong>Aviso de Privacidad — Importancia de tu privacidad</strong></p>
-          <p>En la Universidad Tecnológica del Norte de Guanajuato respetamos y valoramos la confianza que depositas en nosotros. Este Aviso de Privacidad tiene como propósito informarte de manera clara cómo obtenemos, usamos, protegemos y, en su caso, compartimos tus datos personales, así como los derechos que puedes ejercer en relación con ellos.</p>
-          <h4>Responsable del tratamiento</h4>
-          <p>La Universidad Tecnológica del Norte de Guanajuato, con domicilio en Av. Educación Tecnológica No. 34, Fracc. Universidad, Dolores Hidalgo Cuna de la Independencia Nacional, Guanajuato, C.P. 37800, teléfono (418) 182-5500, correo electrónico: <a href="mailto:javier.mendez@utng.edu.mx">javier.mendez@utng.edu.mx</a> y página oficial: <a href="https://www.utng.edu.mx/" target="_blank" rel="noopener">https://www.utng.edu.mx/</a>, es la institución responsable de dar un uso adecuado a la información personal que nos proporciones.</p>
-
-          <h4>1. Datos que podemos solicitar</h4>
-          <ul>
-            <li>Nombre y apellidos</li>
-            <li>Correo electrónico</li>
-            <li>Número telefónico de contacto</li>
-            <li>Dirección</li>
-            <li>Información adicional que compartas voluntariamente mediante formularios o consultas en línea</li>
-          </ul>
-
-          <h4>2. Finalidades del tratamiento</h4>
-          <ul>
-            <li>Atender y dar respuesta a dudas, solicitudes o comentarios enviados mediante este sitio web.</li>
-            <li>Proporcionar información administrativa y académica relacionada con nuestra universidad.</li>
-            <li>Mantenerte informado acerca de cambios relevantes, avisos o actualizaciones.</li>
-            <li>Cumplir con obligaciones de carácter legal o contractual aplicables a la institución.</li>
-          </ul>
-
-          <h4>3. Derechos ARCO</h4>
-          <p>Conforme a la Ley, cuentas con los derechos de Acceso, Rectificación, Cancelación y Oposición (ARCO) respecto al manejo de tus datos. Para ejercerlos, podrás comunicarte al correo: <a href="mailto:javier.mendez@utng.edu.mx">javier.mendez@utng.edu.mx</a> o llamar al teléfono (418) 182-5500.</p>
-
-          <h4>4. Transferencia de datos</h4>
-          <p>Tus datos personales no se transferirán a terceros sin tu consentimiento previo, salvo cuando sea requerido por disposición legal o autoridad competente.</p>
-
-          <h4>5. Medidas de seguridad</h4>
-          <p>La Universidad implementa mecanismos administrativos, tecnológicos y físicos para proteger tu información contra accesos no autorizados, pérdida, alteración o uso indebido.</p>
-
-          <h4>6. Actualizaciones al aviso</h4>
-          <p>Este Aviso de Privacidad podrá ser modificado con motivo de cambios normativos o internos. Cualquier actualización será publicada en este mismo sitio web.</p>
-
-          <h4>7. Aceptación</h4>
-          <p>Al enviar tus datos a través de este portal, manifiestas estar de acuerdo con los términos establecidos en el presente Aviso de Privacidad.</p>
-        </article>
-
-        <details style="margin-top:16px">
-          <summary>Guía oficial para elaborar avisos de privacidad (INAI)</summary>
-          <p><a href="https://inicio.inai.org.mx/CalendarioCapacitacion/ManualAvisoPrivacidad.pdf" target="_blank" rel="noopener">Ver guía del INAI</a></p>
-        </details>
-
-        <!-- Formulario accesible -->
-        <form class="privacy-form" novalidate aria-label="Formulario de contacto para aviso de privacidad">
+      <!-- Formulario de contacto -->
+      <div class="privacy-notice" role="region" aria-labelledby="contacto-titulo">
+        <form class="privacy-form" novalidate aria-label="Formulario de contacto">
           <div class="form-group">
             <label for="razon-social">Razón Social</label>
             <input type="text" id="razon-social" required placeholder="Nombre de la organización" aria-required="true" />
@@ -941,9 +896,9 @@
             <label for="datos-requeridos">Datos Adicionales Requeridos</label>
             <textarea id="datos-requeridos" rows="4" placeholder="Especifique los datos adicionales que requiere"></textarea>
           </div>
-          <div style="text-align:center;grid-column:1/-1">
-            <button type="submit" class="btn">Solicitar Aviso de Privacidad</button>
-            <a class="btn btn-outline" href="#inicio">Volver al inicio</a>
+          <div style="text-align:center;grid-column:1/-1;margin-top:20px">
+            <button type="submit" class="btn">Enviar Información</button>
+            <a class="btn btn-outline" href="#inicio" style="margin-left:20px">Volver al inicio</a>
           </div>
         </form>
       </div>
@@ -1051,7 +1006,7 @@
           alert('Por favor, completa Razón Social y Correo Electrónico.');
           return;
         }
-        alert('¡Gracias! Recibimos tu solicitud de aviso de privacidad.');
+        alert('¡Gracias! Hemos recibido tu información de contacto.');
         form.reset();
       });
     }
